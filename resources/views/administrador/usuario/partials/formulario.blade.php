@@ -37,7 +37,7 @@
         <div class=" col-sm-6  form-group ">
             <div class=" input-group col-md-8 col-md-offset-1">
               <span class="input-group-addon" id="basic-addon1">
-                <i class="material-icons md-18">dns</i>
+                <i class="material-icons md-18">date_range</i>
               </span>
               <input class="datepicker form-control" type="text" value="30/10/2017"/>
            </div>
