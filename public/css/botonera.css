@@ -1,0 +1,75 @@
+/*Botonos de login*/
+.card .cabeceraSession {
+  background: linear-gradient(60deg, #ab47bc, #041450);
+  color: white;
+}
+
+.btn.btn-session{
+  background-color: #03134e;
+}
+
+/*BOTONES*/
+
+.btn.btn-buscar{
+  background-color: #37474f;
+}
+
+.btn.btn-aceptar{
+  background-color: #2e7d32;
+}
+.btn.btn-eliminar{
+  background-color: #dd2c00;
+}
+
+.btn.btn-guardar{
+  background-color: #01579b;
+}
+
+.btn.btn-cancelar{
+  background-color: #f57c00;
+}
+a.link{
+  text-decoration: none !important;
+  color: black;
+}
+
+/*#880e4f*/
+.btn.btn-editar{
+  background-color: #999933;
+}
+.btn.btn-editar2{
+  background-color: #880e4f;
+}
+
+.btn.btn-ver{
+  background-color: #29b6f6;
+}
+.btn.btn-session{
+  background-color: #03134e;
+}
+
+/*BOTONES ICONOS*/
+.btn.btn-iconos{
+  background-color: #607d8b;
+}
+
+
+
+
+
+
+
+
+
+/*Menu*/
+
+.btn-barraNavegacion{
+  background-color: #041450;
+  color: white;
+}
+/*Administrador*/
+
+.navbar.navbar-administrador {
+  background-color: #03134e;
+  color: #ffffff;
+}

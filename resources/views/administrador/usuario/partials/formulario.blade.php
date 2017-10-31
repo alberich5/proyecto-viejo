@@ -2,7 +2,7 @@
   <div name="formulario busqueda" class="form-horizontal">
 
     <div class="row">
-        <div class=" col-sm-6 form-group">
+        <div class=" col-sm-6 form-group label-floating has-success">
             <div class="input-group col-md-8 col-md-offset-1">
                 <span class="input-group-addon" id="basic-addon1">
                   <i class="material-icons md-18">account_circle</i>
@@ -33,6 +33,16 @@
            </div>
         </div>
     </div>
+    <div class="row">
+        <div class=" col-sm-6  form-group ">
+            <div class=" input-group col-md-8 col-md-offset-1">
+              <span class="input-group-addon" id="basic-addon1">
+                <i class="material-icons md-18">dns</i>
+              </span>
+              <input class="datepicker form-control" type="text" value="30/10/2017"/>
+           </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class=" col-sm-6 form-group ">
@@ -46,7 +56,15 @@
     </div>
 
     <div class="row col-sm-offset-1">
-            <input type="submit" class="btn btn-primary" value="BUSCAR">
+            <input type="submit" class="btn btn-buscar btn-sm " value="buscar">
+            <input type="submit" class="btn btn-aceptar btn-sm " value="agregar">
+            <input type="submit" class="btn btn-editar btn-sm" value="editar">
+            <input type="submit" class="btn btn-editar2 btn-sm " value="editar">
+            <input type="submit" class="btn btn-ver btn-sm" value="ver">
+            <input type="submit" class="btn btn-cancelar btn-sm" value="cancelar">
+            <input type="submit" class="btn btn-eliminar btn-sm" value="eliminar">
+            <input type="submit" class="btn btn-guardar btn-sm" value="guardar">
+            <button class="btn btn-iconos btn-xs"> <i class="material-icons">face</i></button>
     </div>
 
   </div>

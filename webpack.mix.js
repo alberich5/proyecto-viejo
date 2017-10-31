@@ -66,34 +66,3 @@ mix.scripts([
   	'resources/assets/Omarcss/material-kit.css',
  ],'public/css/estiloAdministrador.css')
   ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Ya ni es necesario para que funcioen
-//wizard
-   mix.scripts([
-   	'resources/assets/wizard/js/jquery.bootstrap.js',
-      'resources/assets/wizard/js/material-bootstrap-wizard.js',
-      'resources/assets/wizard/js/jquery.validate.min.js',
-   	], 'public/js/wizard.js');

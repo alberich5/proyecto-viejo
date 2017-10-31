@@ -9,6 +9,7 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<!--     Estilos necesarios para que funcione perfectamente la plantilla de login     -->
 	<link rel="stylesheet" href="{{asset('css/estiloLogin.css')}}" />
+	<link rel="stylesheet" href="{{asset('css/botonera.css')}}" />
 </head>
 <body class="signup-page">
     <div class="wrapper">

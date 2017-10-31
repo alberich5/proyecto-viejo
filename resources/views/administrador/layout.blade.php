@@ -9,6 +9,7 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<!--    Estilos para la plantilla de Administrador     -->
   <link rel="stylesheet" href="{{asset('css/estiloAdministrador.css')}}" />
+	<link rel="stylesheet" href="{{asset('css/botonera.css')}}" />
     @yield('css')
 </head>
 
@@ -23,7 +24,7 @@
           @yield('content')
      </div>
   	</div>
-		
+
 </body>
 	<!--   Archivos de javascript   -->
   <script src="{{asset('js/scriptAdministrador.js')}}" type="text/javascript"></script>

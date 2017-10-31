@@ -44,7 +44,7 @@ end:"mouseup touchend"},f="noUi-target noUi-base noUi-origin noUi-handle noUi-ho
 a)}})(window.jQuery||window.Zepto);
 
 /* =========================================================
- * bootstrap-datepicker.js 
+ * bootstrap-datepicker.js
  * http://www.eyecon.ro/bootstrap-datepicker
  * =========================================================
  * Copyright 2012 Stefan Petre
@@ -63,7 +63,7 @@ a)}})(window.jQuery||window.Zepto);
  * ========================================================= */
  var color = '';
 !function( $ ) {
-	
+
 	// Picker object
 
 	var Datepicker = function(element, options){
@@ -77,7 +77,7 @@ a)}})(window.jQuery||window.Zepto);
 							});
 		this.isInput = this.element.is('input');
 		this.component = this.element.is('.date') ? this.element.find('.add-on') : false;
-		
+
 		if (this.isInput) {
 			this.element.on({
 				focus: $.proxy(this.show, this),
@@ -91,7 +91,7 @@ a)}})(window.jQuery||window.Zepto);
 				this.element.on('click', $.proxy(this.show, this));
 			}
 		}
-	
+
 		this.minViewMode = options.minViewMode||this.element.data('date-minviewmode')||0;
 		if (typeof this.minViewMode === 'string') {
 			switch (this.minViewMode) {
@@ -129,14 +129,14 @@ a)}})(window.jQuery||window.Zepto);
 		this.fillMonths();
 		this.update();
 		this.showMode();
-		
+
 	};
-	
-	
-	
+
+
+
 	Datepicker.prototype = {
 		constructor: Datepicker,
-		
+
 		show: function(e) {
 		    var datepicker = this.picker;
 
@@ -160,20 +160,20 @@ a)}})(window.jQuery||window.Zepto);
 				type: 'show',
 				date: this.date
 			});
-			
+
 			setTimeout(function(){
     			datepicker.addClass('open');
 			}, 170);
 		},
-		
+
 		hide: function(){
 			var datepicker = this.picker;
 			datepicker.removeClass('open');
-			
+
 			setTimeout(function(){
     			this.picker.hide();
 			}, 500);
-			
+
 			$(window).off('resize', this.place);
 			this.viewMode = this.startViewMode;
 			this.showMode();
@@ -185,9 +185,9 @@ a)}})(window.jQuery||window.Zepto);
 				type: 'hide',
 				date: this.date
 			});
-			
+
     	},
-		
+
 		set: function() {
 			var formated = DPGlobal.formatDate(this.date, this.format);
 			if (!this.isInput) {
@@ -199,7 +199,7 @@ a)}})(window.jQuery||window.Zepto);
 				this.element.prop('value', formated);
 			}
 		},
-		
+
 		setValue: function(newDate) {
 			if (typeof newDate === 'string') {
 				this.date = DPGlobal.parseDate(newDate, this.format);
@@ -210,7 +210,7 @@ a)}})(window.jQuery||window.Zepto);
 			this.viewDate = new Date(this.date.getFullYear(), this.date.getMonth(), 1, 0, 0, 0, 0);
 			this.fill();
 		},
-		
+
 		place: function(){
 			var offset = this.component ? this.component.offset() : this.element.offset();
 			this.picker.css({
@@ -218,7 +218,7 @@ a)}})(window.jQuery||window.Zepto);
 				left: offset.left
 			});
 		},
-		
+
 		update: function(newDate){
 			this.date = DPGlobal.parseDate(
 				typeof newDate === 'string' ? newDate : (this.isInput ? this.element.prop('value') : this.element.data('date')),
@@ -227,7 +227,7 @@ a)}})(window.jQuery||window.Zepto);
 			this.viewDate = new Date(this.date.getFullYear(), this.date.getMonth(), 1, 0, 0, 0, 0);
 			this.fill();
 		},
-		
+
 		fillDow: function(){
 			var dowCnt = this.weekStart;
 			var html = '<tr>';
@@ -237,7 +237,7 @@ a)}})(window.jQuery||window.Zepto);
 			html += '</tr>';
 			this.picker.find('.datepicker-days thead').append(html);
 		},
-		
+
 		fillMonths: function(){
 			var html = '';
 			var i = 0
@@ -246,7 +246,7 @@ a)}})(window.jQuery||window.Zepto);
 			}
 			this.picker.find('.datepicker-months td').append(html);
 		},
-		
+
 		fill: function() {
 			var d = new Date(this.viewDate),
 				year = d.getFullYear(),
@@ -288,7 +288,7 @@ a)}})(window.jQuery||window.Zepto);
 			}
 			this.picker.find('.datepicker-days tbody').empty().append(html.join(''));
 			var currentYear = this.date.getFullYear();
-			
+
 			var months = this.picker.find('.datepicker-months')
 						.find('th:eq(1)')
 							.text(year)
@@ -297,7 +297,7 @@ a)}})(window.jQuery||window.Zepto);
 			if (currentYear === year) {
 				months.eq(this.date.getMonth()).addClass('active').addClass(this.color);
 			}
-			
+
 			html = '';
 			year = parseInt(year/10, 10) * 10;
 			var yearCont = this.picker.find('.datepicker-years')
@@ -312,7 +312,7 @@ a)}})(window.jQuery||window.Zepto);
 			}
 			yearCont.html(html);
 		},
-		
+
 		click: function(e) {
 			e.stopPropagation();
 			e.preventDefault();
@@ -328,7 +328,7 @@ a)}})(window.jQuery||window.Zepto);
 							case 'next':
 								this.viewDate['set'+DPGlobal.modes[this.viewMode].navFnc].call(
 									this.viewDate,
-									this.viewDate['get'+DPGlobal.modes[this.viewMode].navFnc].call(this.viewDate) + 
+									this.viewDate['get'+DPGlobal.modes[this.viewMode].navFnc].call(this.viewDate) +
 									DPGlobal.modes[this.viewMode].navStep * (target[0].className === 'prev' ? -1 : 1)
 								);
 								this.fill();
@@ -380,12 +380,12 @@ a)}})(window.jQuery||window.Zepto);
 				}
 			}
 		},
-		
+
 		mousedown: function(e){
 			e.stopPropagation();
 			e.preventDefault();
 		},
-		
+
 		showMode: function(dir) {
 			if (dir) {
 				this.viewMode = Math.max(this.minViewMode, Math.min(2, this.viewMode + dir));
@@ -393,7 +393,7 @@ a)}})(window.jQuery||window.Zepto);
 			this.picker.find('>div').hide().filter('.datepicker-'+DPGlobal.modes[this.viewMode].clsName).show();
 		}
 	};
-	
+
 	$.fn.datepicker = function ( option, val ) {
 		return this.each(function () {
 			var $this = $(this),
@@ -412,7 +412,7 @@ a)}})(window.jQuery||window.Zepto);
 		}
 	};
 	$.fn.datepicker.Constructor = Datepicker;
-	
+
 	var DPGlobal = {
 		modes: [
 			{
@@ -431,11 +431,11 @@ a)}})(window.jQuery||window.Zepto);
 				navStep: 10
 		}],
 		dates:{
-			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-			daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-			daysMin: ["S", "M", "T", "W", "T", "F", "S", "S"],
-			months: ["JAN.", "FEB.", "MAR.", "APR.", "MAY", "JUN.", "JUL.", "AUG.", "SEPT.", "OCT.", "NOV.", "DEC."],
-			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+			days: ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"],
+			daysShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"],
+			daysMin: ["D", "L", "M", "M", "J", "V", "S", "D"],
+			months: ["ENE.", "FEB.", "MAR.", "ABR.", "MAY", "JUN.", "JUL.", "AGO.", "SEPT.", "OCT.", "NOV.", "DIC."],
+			monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
 		},
 		isLeapYear: function (year) {
 			return (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0))
@@ -512,7 +512,7 @@ a)}})(window.jQuery||window.Zepto);
 						'</thead>',
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>'
 	};
-	
+
 	DPGlobal.template = '<div class="datepicker dropdown-menu">'+
 							'<div class="datepicker-days">'+
 								'<table class=" table-condensed">'+
@@ -535,6 +535,7 @@ a)}})(window.jQuery||window.Zepto);
 						'</div>';
 
 }( window.jQuery );
+
 /*!
     
  =========================================================

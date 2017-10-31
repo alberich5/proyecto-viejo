@@ -261,12 +261,22 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   color: #999999;
 }
 
+
+
+
 /*
  Estos Estilos que pueden modificarse:
   1re valor es el degradado y va 1 al 100
   2do valor es el primmer carousel-control
   3re valor es el segundo valor
 */
+
+
+
+
+
+
+
 
 
 .btn.btn-primary,
@@ -286,7 +296,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
-  background-color: #9c27b0;
+  background-color: #3b5106;
   color: #FFFFFF;
 }
 .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:hover,
@@ -335,6 +345,33 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   background-color: transparent;
   color: #9c27b0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn.btn-info,
 .navbar .navbar-nav > li > a.btn.btn-info {
   box-shadow: 0 2px 2px 0 rgba(3, 169, 244, 0.14), 0 3px 1px -2px rgba(3, 169, 244, 0.2), 0 1px 5px 0 rgba(3, 169, 244, 0.12);
@@ -401,6 +438,12 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   background-color: transparent;
   color: #03a9f4;
 }
+
+
+
+
+
+
 .btn.btn-success,
 .navbar .navbar-nav > li > a.btn.btn-success {
   box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12);
@@ -1838,6 +1881,10 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 }
 .has-error .form-control-feedback {
   color: #f44336;
+  opacity: 1;
+}
+.has-pabic .form-control-feedback {
+  color: #c0f914;
   opacity: 1;
 }
 
@@ -3681,7 +3728,7 @@ h2.title {
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .header-filter .container {
   z-index: 2;

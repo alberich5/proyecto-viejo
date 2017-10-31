@@ -2,7 +2,7 @@
 @section('content')
 <form class="form" method="POST" action="{{ route('login') }}">
   {{ csrf_field() }}
-  <div class="header header-omar text-center">
+  <div class="header cabeceraSession text-center">
     <h4>Iniciar session</h4>
   </div>
   <p class="text-divider">SIPAB 2017</p>
@@ -41,8 +41,8 @@
 
   </div>
   <div class="footer text-center">
-    <button type="submit" class="btn btn-primary btn-round">
-        <i class="material-icons">lock open</i>Iniciar sesion
+    <button type="submit" class="btn btn-session btn-round">
+        Iniciar sesion
     </button>
   </div>
 
