@@ -1,6 +1,4 @@
 @extends('layouts.menu')
-
-
 @section('menu')
 <div class="main main-raised" id="seleccionMD">
   <div class="profile-content">
@@ -8,7 +6,7 @@
               <div class="row">
                   <div class="profile">
                       <div class="avatar">
-                          <img src="{{asset('img/omar.jpg')}}" alt="Circle Image" class="img-circle img-responsive img-raised">
+                          <img src="{{asset('img/pabic.jpg')}}" alt="Circle Image" class="img-circle img-responsive img-raised">
                       </div>
                       <div class="name">
                           <h3 class="title">Areas</h3>
@@ -25,12 +23,15 @@
                           <div class="nav-align-center">
                   <ul class="nav nav-pills" role="tablist">
                     <li class="active">
-                      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#sucursal">
                         Editar
                       </button>
                     </li>
+                    <!-- Button trigger modal -->
+
 
                             </ul>
+
 
                             <div class="tab-content gallery">
                     <div class="tab-pane active" id="studio">

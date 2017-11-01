@@ -15,7 +15,7 @@
 	@include('layouts.partials.navegacionmenu')
 
     <div class="wrapper">
-			<div class="header header-filter" style="background-image: url('{{asset('img/city2.jpg')}}');"></div>
+			<div class="header header-filter" style="background-image: url('{{asset('img/policia.jpg')}}');"></div>
 			<!--     Contenedor     -->
 			@yield('menu')
 		</div>

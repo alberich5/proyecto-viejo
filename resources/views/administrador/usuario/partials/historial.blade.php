@@ -1,4 +1,5 @@
-<div class="modal fade" id="historial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+<div class="modal fade in" id="historial"  >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,16 +10,9 @@
       </div>
 
       <div class="modal-body">
-        <table id="usuariosTabla" class="display"  width="100%" cellspacing="0">
-              <thead>
-                <tr>
-                  <th>FECHA</th>
-                  <th>HISTORIAL</th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-        </table>
+        <pre>
+          @{{ $data }}
+        </pre>
 
       </div>
       <div class="modal-footer">

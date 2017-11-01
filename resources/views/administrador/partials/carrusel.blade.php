@@ -19,8 +19,8 @@
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
-                <div class="item active">"
-                  <img src="{{asset('img/bg2.jpeg')}}" alt="Awesome Image">
+                <div class="item active">
+                  <img src="{{asset('img/admin.jpg')}}" alt="Awesome Image">
                   <div class="carousel-caption">
                     <h4> Bienvenidos</h4>
                   </div>

@@ -28,7 +28,6 @@ mix.scripts([
  	'resources/assets/Omarjs/bootstrap.min.js',
  	'resources/assets/Omarjs/material.min.js',
  	'resources/assets/Omarjs/nouislider.min.js',
- 	'resources/assets/Omarjs/bootstrap-datepicker.js',
  	'resources/assets/Omarjs/material-kit.js',
 	'resources/assets/js/axios.js',
 	'resources/assets/js/vue.js',

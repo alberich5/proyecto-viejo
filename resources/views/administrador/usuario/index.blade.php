@@ -11,7 +11,7 @@
       <div class="wizard-container">
         <div class="card wizard-card" data-color="azul" id="wizard">
           <div class="wizard-header">
-            <h2>Psicologia</h2>
+            <h2>Recursos Humanos</h2>
           </div>
 
             <div id="tabledemo" >

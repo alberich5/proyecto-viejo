@@ -13,7 +13,8 @@
     @yield('css')
 </head>
 
-<body class="index-page">
+<body class="index-page" >
+
 
   @include('administrador.partials.navegacion')
 
@@ -21,6 +22,7 @@
      <br><br>
      <div class="main main-raised" >
          <center><h1>Administrador</h1></center>
+			
           @yield('content')
      </div>
   	</div>
