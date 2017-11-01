@@ -4,5 +4,7 @@
     "/js/scriptMenu.js": "/js/scriptMenu.js",
     "/css/estiloMenu.css": "/css/estiloMenu.css",
     "/js/scriptAdministrador.js": "/js/scriptAdministrador.js",
-    "/css/estiloAdministrador.css": "/css/estiloAdministrador.css"
+    "/css/estiloAdministrador.css": "/css/estiloAdministrador.css",
+    "/js/scriptPsicologia.js": "/js/scriptPsicologia.js",
+    "/css/estiloPsicologia.css": "/css/estiloPsicologia.css"
 }
