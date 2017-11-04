@@ -22,12 +22,13 @@
      <br><br>
      <div class="main main-raised" >
          <center><h1>Administrador</h1></center>
-			
+
           @yield('content')
      </div>
   	</div>
 
 </body>
+
 	<!--   Archivos de javascript   -->
   <script src="{{asset('js/scriptAdministrador.js')}}" type="text/javascript"></script>
 	@yield('js')

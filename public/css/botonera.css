@@ -1,15 +1,18 @@
 /*Botonos de login*/
+/*son los botones de las de inicio de seccion y de los apartados*/
 .card .cabeceraSession {
   background: linear-gradient(60deg, #ab47bc, #041450);
   color: white;
 }
 
 .btn.btn-session{
-  background-color: #03134e;
+  background-color: #01579b;
 }
 
-/*BOTONES*/
 
+
+/*BOTONES*/
+/*estos son los botones de las principales acciones que se van a realizar */
 .btn.btn-buscar{
   background-color: #37474f;
 }
@@ -49,6 +52,7 @@ a.link{
 }
 
 /*BOTONES ICONOS*/
+/* son los botones de los iconos mas reconocidos*/
 .btn.btn-iconos{
   background-color: #607d8b;
 }

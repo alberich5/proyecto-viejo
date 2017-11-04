@@ -36,7 +36,7 @@ Vue.component('data-table', {
         // Basically we're just building a multi-dimensional array here. If the data is _already_ in the right format you could
         // skip this loop...
         let row = [];
-        row.push("<a href='#' class='' onclick='"+"alerta("+item.id+")'"+" ><i class='material-icons'>visibility</i></a>"+
+        row.push("<a href='#' class='' title='Ver Elemento'  onclick='"+"alerta("+item.id+")'"+" ><i class='material-icons'>visibility</i></a>"+
           "&nbsp;<span><a href='#' class='link'><i class='material-icons'>face</i></a></span>&nbsp;"+
           "<span><a href='#' class='link'><i class='material-icons'>delete</i></a></span>"
         );

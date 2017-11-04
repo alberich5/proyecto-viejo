@@ -14,7 +14,7 @@
             <h2>Recursos Humanos</h2>
           </div>
 
-            <div id="tabledemo" >
+            <div id="tabledemo" class="form-control">
 
                 <!--      Formulario de busqueda      -->
                 @include('administrador.usuario.partials.formulario')
